@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    flex: 1 1 auto;
+  }
+
+  .main_img {
+    align-self: center;
+  }
+
+  .main_img img {
+    width: 826px;
+    height: 309px;
+  }

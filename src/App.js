@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Content from './components/Content';
-import Nav from './components/Nav';
+import Profile from './components/Profile/Profile';
+import Nav from './components/Nav/Nav';
 
 
 
@@ -12,7 +12,7 @@ const App = () => {
     <div className='app_wrapper'>
       <div className='content_wrapper'>
         <Nav />
-        <Content />
+        <Profile />
       </div>
     </div>
   );
