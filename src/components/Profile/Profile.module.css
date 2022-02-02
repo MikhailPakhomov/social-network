@@ -1,12 +1,7 @@
-.content{
-    display: flex;
-    flex-direction: column;
-    background-color: cornflowerblue;
-    flex: 1 1 auto;
-  }
 
   .main_img {
-    align-self: center;
+    display: flex;
+    justify-content: center;
   }
 
   .main_img img {

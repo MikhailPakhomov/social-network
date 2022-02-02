@@ -11,6 +11,14 @@
   
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    flex: 1 1 auto;
+}
+
+
 
 
 

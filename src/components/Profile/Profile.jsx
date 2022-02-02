@@ -4,15 +4,17 @@ import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () =>{
     return (
-        <div className={s.content}>
+        <div>
         <div class={s.main_img}>
-          <img src='https://cs7.pikabu.ru/post_img/big/2017/12/14/6/151324248417431745.jpg'/>
+          <div>
+            <img src='https://cs7.pikabu.ru/post_img/big/2017/12/14/6/151324248417431745.jpg'/>
+          </div>
         </div>
         <div>
           ava + description
         </div>
           <MyPosts />
-      </div>
+        </div>
     );
 }
 
