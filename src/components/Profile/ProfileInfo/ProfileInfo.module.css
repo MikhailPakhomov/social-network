@@ -1,0 +1,13 @@
+.main_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main_img img {
+    width: 826px;
+    height: 309px;
+  }
+
+  .blockProfile{
+    padding: 10px;
+  }

@@ -3,13 +3,25 @@
     background-color: burlywood;
     
   }
+
+.item{
+  padding: 10px;
+  }
 .link{
 color: white;
 text-decoration: none;
 font-size: 17px;
+
 }
 
 .link:hover{
   font-weight: bold;
-    color: blue; 
+  color: blue; 
+}
+
+.active{
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
 }

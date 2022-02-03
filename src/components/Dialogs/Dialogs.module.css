@@ -1,0 +1,44 @@
+.dialogs{
+    display: flex;
+}
+
+.dialogs_items{
+    flex: 0 0 200px;
+    padding: 10px;
+    
+}
+
+.dialog{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.dialog:hover{
+    background-color: gold;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+.messages{
+    padding: 10px;
+}
+
+.message{
+
+}
+
+.active{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: gold;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
