@@ -1,0 +1,42 @@
+.dialogItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dialogItem:hover{
+    background-color: gold;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .activeItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    background-color: gold;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.ava img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.dialogsName{
+    padding-left: 10px;
+}

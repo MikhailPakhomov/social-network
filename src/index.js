@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import state from './redux/state'
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <App state={state} />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

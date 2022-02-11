@@ -1,0 +1,27 @@
+.sidebar {}
+
+.sidebarItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.ava img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 3px;
+}
+
+.name {
+    color: white;
+    font-size: 16px;
+    padding-top: 3px;
+    text-align: center;
+}
