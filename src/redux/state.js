@@ -1,3 +1,7 @@
+let date = new Date();
+let hour = date.getHours;
+let min = date.getMinutes;
+
 const state = {
     profilePage: {
         posts: [
@@ -17,9 +21,21 @@ const state = {
             { id: 6, name: "Zhenya", ava: 'https://rus-pic.ru/wp-content/uploads/2021/12/avatarki-dlja-malchikov-41-foto-a476ab0.jpg' },
         ],
         messages: [
-            { id: 1, message: "Hi" },
-            { id: 2, message: "How is your it-kamasutra?" },
-            { id: 3, message: "Yo" }
+            { id: 1, message: "Hi", time: "13:54" },
+            { id: 2, message: "How is your it-kamasutra?", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" },
+            { id: 3, message: "Yo", time: "13:54" }
         ]
     },
 
