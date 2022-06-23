@@ -6,7 +6,7 @@ const Post = (props) => {
   return (
     <div className={s.item}>
       <div className={s.ava}>
-        <img src="https://mr-mem.ru/images/memes/pidrila-ebanaya-kotik_1496479948.jpeg"></img>
+        <img src="http://risovach.ru/upload/2012/12/mem/pidrila-ebanaya_6711217_orig_.jpeg"></img>
       </div>
       <div className={s.post}>
         <div className={s.name}>

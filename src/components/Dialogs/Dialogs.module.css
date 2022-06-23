@@ -12,11 +12,19 @@
 }
 
 .messages {
-    padding: 10px;
-    min-height: 92vh;
+    padding: 10px 40px 10px 40px;
     display: flex;
+    min-height: 92vh;
+    max-width: 880px;
     flex-direction: column;
     flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.messagesItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .inputMessage {
@@ -27,6 +35,7 @@
 }
 
 .inputText {
+    padding-top: 10px;
     padding-right: 5px;
     margin-right: 5px;
 }
@@ -35,6 +44,7 @@
     height: 40px;
     width: 500px;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .buttonSend {
