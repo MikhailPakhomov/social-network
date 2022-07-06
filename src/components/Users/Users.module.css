@@ -1,9 +1,22 @@
-.ava {
-    padding-top: 10px;
-}
 
+.users{
+    padding: 10px;
+
+}
+.items{
+    margin: 15px 0px 15px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    
+    
+}
+.ava, .fullname{
+    color: azure;
+    align-self: center;
+
+}
 .ava img {
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
 }
