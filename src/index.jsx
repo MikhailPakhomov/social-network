@@ -17,7 +17,11 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+<<<<<<< HEAD
 window.store = store;
+=======
+
+>>>>>>> b57745d5990a27a086641a7e87304cb2edd2b97d
 
 
 
