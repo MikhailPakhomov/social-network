@@ -15,6 +15,8 @@
 }
 
 .post {
+    margin-top: auto;
+    margin-bottom: 5px;
     color: white;
     padding: 10px;
 }

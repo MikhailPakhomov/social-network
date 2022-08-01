@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import state from './redux/state'
-
+import {addPost} from "./redux/state"
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <App state={state} />
+    <App state={state} addPost={addPost}/>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

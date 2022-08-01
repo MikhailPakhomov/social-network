@@ -1,0 +1,47 @@
+
+.users{
+    padding: 10px;
+
+}
+.items{
+    margin: 15px 0px 15px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    
+    
+}
+.ava, .fullname{
+    color: azure;
+    align-self: center;
+
+}
+.ava img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+
+.pagenumbers{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.pageItem{
+    padding: 1px;
+    margin: 1px;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+.selectedPage{
+    padding: 1px;
+    margin: 1px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    
+}

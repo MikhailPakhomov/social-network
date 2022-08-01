@@ -1,24 +1,20 @@
-
-.app_wrapper{
-  flex: 1 1 auto;
+.app_wrapper {
+    flex: 1 1 auto;
 }
 
-.content_wrapper{
-  display: flex;
-  justify-content: center;
-  max-width: 1280px;
-  margin: 0px auto;
-  
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0px auto;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     background-color: cornflowerblue;
     flex: 1 1 auto;
+    max-width: 1080px;
+    min-height: 92vh;
+    overflow: hidden;
 }
-
-
-
-
-
