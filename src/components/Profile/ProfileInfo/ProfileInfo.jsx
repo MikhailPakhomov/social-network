@@ -1,12 +1,7 @@
 import React from 'react';
-import Preloader from '../../../common/Preloader';
 import s from "./ProfileInfo.module.css";
 
 const ProfileInfo = (props) => {
- console.log (props)
-     if(!(props.userInfo)) {
-         <Preloader />
-    }
     return (
         <div>
             <div className={s.main_img}>
@@ -16,14 +11,15 @@ const ProfileInfo = (props) => {
             </div>
             <div className={s.blockProfile}>
                     <div>
-                    <img src={props.userInfo.photos.large}></img>
+                    <img src={props.userProfile.photos.large}></img>
                 </div>
-                <div>{props.userInfo.fullName}</div> 
+                <div>{props.userProfile.fullName}</div> 
+                <div>Обо мне: {props.userProfile.aboutMe}</div>
                 <div>contacts
-                    <div>vk</div>
-                    <div>fb</div>
-                    <div>ig</div>
-                    <div>git</div>
+                    <div>VK: {props.userProfile.contacts.vk}</div>
+                    <div>Facebook: {props.userProfile.contacts.facebook}</div>
+                    <div>Instagram: {props.userProfile.contacts.instagram}</div>
+                    <div>GitHub: {props.userProfile.contacts.github}</div>
                 </div>
             </div>
             
