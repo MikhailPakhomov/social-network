@@ -9,13 +9,26 @@
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    max-width: 515px;
 }
 
 .messageText {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    word-break: break-all;
+    flex: 1 1 auto;
+}
+
+.messageItemText {
+    line-height: 18px;
     padding: 3px;
 }
 
 .messageTime {
-    font-size: 10px;
     align-self: flex-end;
+}
+
+.messageItemTime {
+    font-size: 10px;
 }
