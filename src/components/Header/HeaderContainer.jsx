@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "./Header";
+import * as axios from 'axios';
+import { connect } from "react-redux";
 import { setAuthUserData} from "../../redux/auth-reducer"
 
 
@@ -21,9 +23,9 @@ class HeaderContainer extends React.Component {
 }
 
 let mapStateToProps = (state) => ({
-    id: state.auth.id,
-    email: state.auth.email,
-    login: state.auth.login
+    // id: state.auth.id,
+    // email: state.auth.email,
+    // login: state.auth.login
 })
 
 export default connect(mapStateToProps, {setAuthUserData} ) (HeaderContainer);
