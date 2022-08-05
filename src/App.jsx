@@ -18,7 +18,7 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className='app_wrapper'>
-        <HeaderContainer/>
+        <HeaderContainer />
         <div className='content_wrapper'>
         <NavContainer />
           <div className='content'>
