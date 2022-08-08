@@ -36,6 +36,7 @@ class ProfileContainer extends React.Component {
         return (<Profile {...this.props} userProfile={this.props.userProfile} />);
     }
     componentDidUpdate() {
+        console.log("Произошло обновление:")
         console.log(this.props)
         if(this.userId != this.props.params.userId){
         this.userId = this.props.params.userId;

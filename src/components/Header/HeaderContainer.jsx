@@ -3,7 +3,7 @@ import Header from "./Header";
 import * as axios from 'axios';
 import { connect } from "react-redux";
 import { setAuthUserData, toggleIsAuth} from "../../redux/auth-reducer"
-
+import {setCurrentUserID} from "../../redux/navbar-reducer"
 
 class HeaderContainer extends React.Component {
 
@@ -12,8 +12,16 @@ class HeaderContainer extends React.Component {
         
         axios.get("https://social-network.samuraijs.com/api/1.0/auth/me", {withCredentials: true})
         .then((response) => {
-            this.props.setAuthUserData(response.data.data);
-            response.data.resultCode === 0 ? this.props.toggleIsAuth(true) : this.props.toggleIsAuth(false);
+            if(response.data.resultCode === 0) {
+                this.props.toggleIsAuth(true);
+                this.props.setAuthUserData(response.data.data);
+                this.props.setCurrentUserID(response.data.data.id)
+            }else {
+                this.props.toggleIsAuth(false);
+                this.props.setCurrentUserID(2)
+            }
+
+             
         })
         }
     
@@ -35,4 +43,4 @@ let mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps, { setAuthUserData, toggleIsAuth } ) (HeaderContainer);
+export default connect(mapStateToProps, { setAuthUserData, toggleIsAuth, setCurrentUserID } ) (HeaderContainer);

@@ -4,10 +4,12 @@ import profileReducer from "./profile-reducer";
 import sidebarReducer from "./sidebar-reducer";
 import findUsersReducer from "./users-reduser";
 import authReducer from "./auth-reducer"
+import navbarReducer from "./navbar-reducer"
 
 let reducers = combineReducers({
     profilePage: profileReducer,
     dialogsPage: dialogsReducer,
+    navbar: navbarReducer,
     sidebar: sidebarReducer,
     findUsers: findUsersReducer,
     auth: authReducer
