@@ -11,6 +11,7 @@ import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Footer from './components/Footer/Footer';
+import LoginPage from './components/Login/Login';
 
 
 const App = (props) => {
@@ -31,6 +32,7 @@ const App = (props) => {
               <Route path="/settings" element={<Settings />} />
               <Route path="/friends" element={<Friends />} />
               <Route path="/users" element={<UsersContainer />} />
+              <Route path="/login" element={<LoginPage />} />
             </Routes>
           </div>
           
