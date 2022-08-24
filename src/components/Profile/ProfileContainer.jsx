@@ -5,6 +5,7 @@ import { getUserProfile } from "../../redux/profile-reducer"
 import Profile from "./Profile";
 import { useParams} from "react-router-dom";
 import { withAuthRedirect } from "../../hoc/AuthRedirect";
+import { compose } from "redux";
 
 const withRouter = WrappedComponent => props => {
 
@@ -31,7 +32,7 @@ class ProfileContainer extends React.Component {
         return (<Profile {...this.props} userProfile={this.props.userProfile} />);
     }
     componentDidUpdate() {
-        if(this.userId != this.props.params.userId){
+        if(this.userId !== this.props.params.userId){
         this.userId = this.props.params.userId;
         this.props.getUserProfile(this.userId);
         }
@@ -43,7 +44,8 @@ let mapStateToProps = (state) => ({
 
 })
 
-let WithUrlDataContainetComponent = withRouter(ProfileContainer);
-let AuthRedirectComponent = withAuthRedirect(WithUrlDataContainetComponent)
-
-export default ProfileContainer=connect(mapStateToProps, { getUserProfile })(AuthRedirectComponent);
+export default compose(
+    connect(mapStateToProps, { getUserProfile }),
+    withRouter,
+    //withAuthRedirect
+)(ProfileContainer);
